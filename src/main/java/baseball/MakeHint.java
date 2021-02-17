@@ -4,28 +4,12 @@ import java.util.Arrays;
 
 public class MakeHint {
 
-    public static int strikeCheck(String input, String answer) {
-        int count = 0;
-        char [] inputArr = input.toCharArray();
-        char [] answerArr = answer.toCharArray();
-        for (int i=0; i < 3; i++) {
-            if (inputArr[i] == answerArr[i])
-                count++;
+    public static void makeHint(int strikeCount, int ballCount) {
+        if (ballCount != 0) {
+            System.out.printf("%d볼 ",ballCount);
         }
-        return count;
-    }
-
-    public static int ballCheck(String input, String answer, int strikeCount) {
-        int count = 0;
-        char [] inputArr = input.toCharArray();
-        char [] answerArr = answer.toCharArray();
-        Arrays.sort(inputArr);
-        Arrays.sort(answerArr);
-        for (int i=0; i < 3; i++) {
-            if (inputArr[i] == answerArr[i])
-                count++;
+        if (strikeCount != 0) {
+            System.out.printf("%d스트라이크 ",strikeCount);
         }
-        count = (count-strikeCount);
-        return count;
     }
 }
