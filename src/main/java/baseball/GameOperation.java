@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class GameOperation {
     public static void gameOperation(Scanner sc) {
         String answer = MakeAnswer.makeNewAnswer();
-        System.out.println(answer);
         while (true) {
             Question.askForInput();
             String input = sc.nextLine();
