@@ -8,8 +8,10 @@ public class GameOperation {
         while (true) {
             Question.askForInput();
             String input = sc.nextLine();
-            if (CheckInputStringValidity.checkString(input) == false) continue;
-            if ( CheckInputAndAnswer.checkInputAndAnswer(input,answer) ) { // if true -> 3 strike
+            if (CheckInputStringValidity.checkString(input) == false) {
+                continue;
+            }
+            if (CheckInputAndAnswer.checkInputAndAnswer(input,answer)) { // if true -> 3 strike
                 return ;
             }
         }
