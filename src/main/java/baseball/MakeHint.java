@@ -11,5 +11,9 @@ public class MakeHint {
         if (strikeCount != 0) {
             System.out.printf("%d스트라이크 ",strikeCount);
         }
+        if ( strikeCount == 0 && ballCount == 0) {
+            System.out.println("낫싱");
+        }
+
     }
 }
