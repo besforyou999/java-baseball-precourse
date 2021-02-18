@@ -4,9 +4,11 @@ public class CheckInputStringValidity {
 
     public static boolean checkString(String input) {
         if (checkNumeric(input) == false) {
+            System.out.println("[ERROR] 숫자를 입력해주세요");
             return false;
         }
         if (checkRange(input) == false) {
+            System.out.println("[ERROR] 길이가 3인 숫자를 입력해주세요");
             return false;
         }
         return true;
