@@ -1,6 +1,6 @@
 package baseball;
 
-public class CheckIFInputisNumeric {
+public class CheckInputStringValidity {
 
     public static boolean checkString(String input) {
         if (checkNumeric(input) == false) {
